@@ -29,10 +29,10 @@ public class ReservationCancelApiController extends HttpServlet {
     @Override
     public void init() {
         ReservationDao reservationDao = new ReservationDaoImpl();
-        RoomRateDao roomRateDao = new RoomRateDaoImpl();          // ✅ NEW
+        RoomRateDao roomRateDao = new RoomRateDaoImpl();          
         ReservationAuditDao auditDao = new ReservationAuditDaoImpl();
 
-        // ✅ Use the 3-arg constructor (DAO + RoomRateDao + AuditDao)
+        
         this.reservationService = new ReservationServiceImpl(reservationDao, roomRateDao, auditDao);
     }
 

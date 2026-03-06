@@ -5,8 +5,8 @@ public class ReservationCreateRequest {
     private String address;
     private String contactNo;
     private String roomType;
-    private String checkIn;   // keep as String for easy form input (YYYY-MM-DD)
-    private String checkOut;  // keep as String for easy form input (YYYY-MM-DD)
+    private String checkIn;   
+    private String checkOut;  
 
     public ReservationCreateRequest() {}
 

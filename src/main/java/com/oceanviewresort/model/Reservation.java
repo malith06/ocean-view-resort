@@ -13,9 +13,7 @@ public class Reservation {
     private LocalDate checkIn;
     private LocalDate checkOut;
     private LocalDateTime createdAt;
-
-    // ✅ Cancel support
-    private String status;          // ACTIVE / CANCELLED
+    private String status;       
     private String cancelReason;
     private LocalDateTime cancelledAt;
 
@@ -65,7 +63,7 @@ public class Reservation {
     public LocalDateTime getCreatedAt() { return createdAt; }
     public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }
 
-    // ✅ Cancel fields
+    
     public String getStatus() { return status; }
     public void setStatus(String status) { this.status = status; }
 
