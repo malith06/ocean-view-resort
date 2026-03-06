@@ -20,7 +20,7 @@ public interface ReservationDao {
 
     long countCancelledBetween(Date from, Date to);
 
-    // ✅ NEW: availability checks (ACTIVE only)
+    
     int countOverlappingActiveReservations(String roomType, LocalDate checkIn, LocalDate checkOut);
 
     int countOverlappingActiveReservationsExclude(String reservationNo, String roomType, LocalDate checkIn, LocalDate checkOut);
