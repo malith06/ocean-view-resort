@@ -45,10 +45,10 @@ public class LoginController extends HttpServlet {
         if (result != null && result.isSuccess()) {
             HttpSession session = req.getSession(true);
 
-            // store username (simple + safe)
+            
             session.setAttribute("user", username);
 
-            // ✅ redirect to dashboard after login
+           
             resp.sendRedirect(req.getContextPath() + "/dashboard");
             return;
         }

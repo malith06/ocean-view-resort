@@ -36,10 +36,7 @@ public class AuthServiceImpl implements AuthService {
             return new LoginResponse(false, "Your account is disabled. Contact admin.", null, null);
         }
 
-        // ✅ Simple password check (temporary)
-        // If you used SHA2 in DB: compare hash of input password with user.getPasswordHash()
-        // If you stored plain text (not recommended): compare directly.
-        // For now: compare directly with password_hash field (development only).
+        
         if (!PasswordUtil.verify(request.getPassword(), user.getPasswordHash())) {
             return new LoginResponse(false, "Invalid username or password.", null, null);
         }

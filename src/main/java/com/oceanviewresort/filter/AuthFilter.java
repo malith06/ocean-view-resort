@@ -23,7 +23,7 @@ public class AuthFilter implements Filter {
                 path.equals("/login") ||
                 path.equals("/help") ||
                 path.startsWith("/assets/") ||
-                path.equals("/db-test"); // optional debug
+                path.equals("/db-test"); 
 
         if (isPublic) {
             chain.doFilter(request, response);
@@ -34,7 +34,7 @@ public class AuthFilter implements Filter {
         boolean loggedIn = (session != null && session.getAttribute("user") != null);
 
         if (!loggedIn) {
-            // ✅ If API request, return JSON (not redirect HTML)
+           
             if (path.startsWith("/api/")) {
                 resp.setStatus(401);
                 resp.setContentType("application/json; charset=UTF-8");
