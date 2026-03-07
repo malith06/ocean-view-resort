@@ -1,4 +1,4 @@
-/* app.css — Ocean View Resort · Premium UI */
+/* app.css — Ocean View Resort ·  */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap');
 
 :root {
@@ -253,7 +253,7 @@ img { max-width: 100%; display: block; }
   color: var(--text);
 }
 
-/* kept for compatibility — hidden via header.jsp removal */
+
 .searchBox {
   flex: 1;
   max-width: 460px;

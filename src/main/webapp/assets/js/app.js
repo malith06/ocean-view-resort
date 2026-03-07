@@ -1,4 +1,4 @@
-// app.js (no async/await)
+// app.js 
 
 function showToast(type, title, message) {
   var t = document.getElementById("toast");

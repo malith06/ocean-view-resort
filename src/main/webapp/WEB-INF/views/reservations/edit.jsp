@@ -301,7 +301,7 @@
     return;
   }
 
-  // ✅ FIX: make sure hidden field is always filled
+  
   form.reservationNo.value = resNo;
 
   // Load existing data
@@ -336,7 +336,7 @@
     e.preventDefault();
     clearErrors(form);
 
-    // ✅ again ensure it is not lost
+   
     form.reservationNo.value = resNo;
 
     var errs = validateClientReservation(form);
@@ -346,7 +346,7 @@
       return;
     }
 
-    // ✅ Send URL-encoded like add.jsp (very stable)
+    
     var body = new URLSearchParams(new FormData(form)).toString();
 
     fetchJson(window.ctx + "/api/reservations/update", {

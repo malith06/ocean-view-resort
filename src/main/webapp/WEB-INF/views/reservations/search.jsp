@@ -203,7 +203,7 @@
     <div class="search-badge">🔍 Lookup</div>
   </div>
 
-  <!-- ✅ Only one card (Quick Tips removed as in original) -->
+ 
   <div class="card">
 
     <form id="searchForm" class="no-print">
